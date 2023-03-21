@@ -1,19 +1,22 @@
 #include "main.h"
 /**
- * print_alphabet - print the alphabet 10 times
+ * print_alphabet_x10 - print alphabet on 10 lines
  *
- * Return: void
+ * Return: Void.
  */
 
 void print_alphabet_x10(void)
 {
-	int i = 0;
-	for (i = 0; i <= 9; i++)
-	{
-	char letter = 'a';
-	for (letter = 'a'; letter <= 'z'; letter++)
-		_putchar(letter);
-	_putchar('\n');
 
-	}
+char alpha;
+int i;
+
+for (i = 0; i < 10; i++)
+{
+for (alpha = 'a'; alpha <= 'z'; alpha++)
+{
+_putchar(alpha);
+}
+_putchar('\n');
+}
 }
